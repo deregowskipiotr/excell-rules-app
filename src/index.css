@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&family=Libre+Caslon+Display&display=swap');
+
+@import 'tailwindcss';
+
+@theme {
+  --font-primary: "Libre Caslon Display", serif;
+  --font-secondary: "Baskervville", serif;
+
+  --color-main: #001002;
+  --color-decor: #10cc58;
+  --color-text: #FCFCF7;
+}
+
+@layer base {
+  * {
+    font-family: var(--font-secondary);
+  }
+  h1,h2,h3,h4,h5,h6 {
+    font-family: var(--font-primary);
+  }
+  body {
+    background-color: var(--color-main);
+    color: var(--color-text);
+  }
+}
